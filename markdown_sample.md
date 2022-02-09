@@ -230,3 +230,7 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 ::: warning
 _here be dragons_
 :::
+The dissolved oxygen may take up electrons directly to from $\ce{OH-}$ ions as follows :
+$$\ce{O2 + 4H2O + 4e- -> 4OH-}$$
+The over all reaction of the miniature cell will be :
+$$\ce{2Fe(s) + O2(g) + 4H+(aq) -> Fe^2+(aq) + 2H2O(l)}$$
