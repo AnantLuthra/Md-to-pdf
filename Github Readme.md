@@ -30,6 +30,12 @@ $$\ce{4Fe^2+ + O2 + 4H2O -> 2Fe2O3 + 8H+(aq)}$$
 Ferric oxide then undergoes hydration to form Rust as follows :
 $$\ce{\underset{Ferric Oxide}{Fe2O3} + xH2O -> \underset{Hydrated Ferric Oxide (Rust)}{Fe2O3xH2O}}$$
 
+| Yeetus | Feetus | G sus           | Bru  |   |
+|--------|--------|-----------------|------|---|
+| Yeet   | Feet   | I like ya cut g | vver |   |
+|        |        |                 |      |   |
+|        |        |                 |      |   |
+
 
 
 
