@@ -1,4 +1,4 @@
-1. All codes should have different background: 
+1. All codes should have different background: (superfences extension)
 [
     `It's background should be formatted`
     ```It's background should also be formatted```
@@ -30,7 +30,8 @@
     2. bar
 ]
 
-3. Tables is not getting converted.[
+3. Tables is not getting converted. (different alignment too)
+[
 
     | Option | Description                                                               |
     | ------ | ------------------------------------------------------------------------- |
