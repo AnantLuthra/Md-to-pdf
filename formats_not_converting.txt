@@ -1,5 +1,7 @@
 1. All codes should have different background: 
 [
+    `It's background should be formatted`
+    ```It's background should also be formatted```
     (
         Syntax highlighting(Markdown extension)
         [
@@ -8,11 +10,8 @@
                 return bar++;
             };
             ``` 
-
         ]
     )
-    `It's background should be formatted`
-    ```It's background should also be formatted```
 ]
 
 2. Start numbering with offset:

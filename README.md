@@ -6,8 +6,13 @@
 - The PDF fill be same as .md file.
 - You just have to paste the link of README.md file from repository and just select the 
 
-### How to use.
-- First create your virtual environment.
+## Clone this repository
+```
+git clone https://github.com/Javets70/Md-to-pdf.git
+```
+
+### Setup before run
+- Create your virtual environment
 ```
 python -m venv your_venv_name
 ```
@@ -15,4 +20,7 @@ python -m venv your_venv_name
 ```
 file_path_to_your_venv\Scripts\activate
 ```
-
+- Install required modules (via pip)
+```
+pip install -r requirements.txt
+```
