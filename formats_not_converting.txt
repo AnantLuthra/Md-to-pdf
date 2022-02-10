@@ -1,18 +1,3 @@
-1. All codes should have different background: (superfences extension)
-[
-    `It's background should be formatted`
-    ```It's background should also be formatted```
-    (
-        Syntax highlighting(Markdown extension)
-        [
-            ```js
-            var foo = function (bar) {
-                return bar++;
-            };
-            ``` 
-        ]
-    )
-]
 
 2. Start numbering with offset:
 [
@@ -30,17 +15,6 @@
     2. bar
 ]
 
-3. Tables is not getting converted. (different alignment too)
-[
-
-    | Option | Description                                                               |
-    | ------ | ------------------------------------------------------------------------- |
-    | data   | path to data files to supply the data that will be passed into templates. |
-    | engine | engine to be used for processing templates. Handlebars is the default.    |
-    | ext    | extension to be used for dest files.                                      |
-
-]
-
 4. Blockquates border is not formatted. [It will be done with CSS]
 
 [
@@ -49,11 +23,6 @@
     > > ...by using additional greater-than signs right next to each other...
     > >
     > > > ...or with spaces between arrows.
-]
-
-5. Auto-converted link.
-[
-    Autoconverted link https://github.com/nodeca/pica
 ]
 
 6. Emojies are not being converted.[Some are being converted, but not all !!]
