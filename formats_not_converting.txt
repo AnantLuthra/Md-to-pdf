@@ -1,5 +1,4 @@
-
-2. Start numbering with offset:
+1. Start numbering with offset:
 [
     57. foo
     1. bar
@@ -15,83 +14,20 @@
     2. bar
 ]
 
-4. Blockquates border is not formatted. [It will be done with CSS]
-
-[
-    > Blockquotes can also be nested...
-    >
-    > > ...by using additional greater-than signs right next to each other...
-    > >
-    > > > ...or with spaces between arrows.
-]
-
-6. Emojies are not being converted.[Some are being converted, but not all !!]
+2. Emojies are not being converted.[Some are being converted, but not all !!](self)
 [
     Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
     Shortcuts (emoticons): :-) :-( 8-) ;)
 ]
 
-7. Subscript/Subscript not being converted.
-[
-    19^th^
-    H~2~O
-]
-
-8. Inserted text in not rendering
-[
-    <ins>
-    ++Inserted text++
-]
-
-9. Marked text in not being converted.
-[
-    <mark>
-    ==Marked text==
-]
-
-10. Footnote link is not rendering. (like wikipedia, [1], [2] with supscript and anchor tag)
+3. Footnote link is not rendering. (like wikipedia, [1], [2] with supscript and anchor tag)
 [
     Footnote 1 link[^first].
     Footnote 2 link[^second].
 
-    (Inline footnote^[Text of inline footnote] definition.)
 ]
 
-11. definition list is not rendering.(https://markdown-it.github.io/)
-[
-    Term 1
-
-    : Definition 1
-    with lazy continuation.
-
-    Term 2 with _inline markup_
-
-    : Definition 2
-
-            { some code, part of Definition 2 }
-
-        Third paragraph of definition 2.
-
-    _Compact style:_
-
-    Term 1
-    ~ Definition 1
-
-    Term 2
-    ~ Definition 2a
-    ~ Definition 2b
-]
-
-12. Abbreviations are also not rendering.(Like tooltip)
-[
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-\*[HTML]: Hyper Text Markup Language
-]
-
-13. Equations.
+4. Equations.
 [
     (Chemistry)
     $\ce{OH-}$ ions as follows :

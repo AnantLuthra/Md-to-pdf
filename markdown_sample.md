@@ -136,7 +136,6 @@ Right aligned columns
 
 [link with title](http://nodeca.github.io/pica/demo/ "title text!")
 
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 ## Images
 
@@ -168,14 +167,6 @@ see [how to change output](https://github.com/markdown-it/markdown-it-emoji#chan
 
 -   19^th^
 -   H~2~O
-
-### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
-
-++Inserted text++
-
-### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
-
-==Marked text==
 
 ### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
 
