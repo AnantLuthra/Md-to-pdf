@@ -20,7 +20,7 @@
     Shortcuts (emoticons): :-) :-( 8-) ;)
 ]
 
-3. Footnote link is not rendering. (like wikipedia, [1], [2] with supscript and anchor tag)
+3. Footnote link is not rendering. (like wikipedia, [1], [2] with supscript and anchor tag) ("footnotes" extension not working)
 [
     Footnote 1 link[^first].
     Footnote 2 link[^second].
@@ -40,4 +40,13 @@
     \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
     $$
 ]
+
+5. Abbreviations ("abbr" extn not working)
+### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
+
+This is HTML abbreviation example.
+
+It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
+
+*[HTML]: Hyper Text Markup Language
 

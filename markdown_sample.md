@@ -1,14 +1,3 @@
----
-__Advertisement :)__
-
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-i18n with plurals support and easy syntax.
-
-You will like those projects!
----
-
 # h1 Heading 8-)
 
 ## h2 Heading
@@ -28,18 +17,6 @@ You will like those projects!
 ---
 
 ---
-
-## Typographic replacements
-
-Enable typographer option to see result.
-
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
-
-test.. test... test..... test?..... test!....
-
-!!!!!! ???? ,, -- ---
-
-"Smartypants, double quotes" and 'single quotes'
 
 ## Emphasis
 
@@ -136,7 +113,6 @@ Right aligned columns
 
 [link with title](http://nodeca.github.io/pica/demo/ "title text!")
 
-
 ## Images
 
 ![Minion](https://octodex.github.com/images/minion.png)
@@ -149,11 +125,6 @@ Like links, Images also have a footnote style syntax
 With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg "The Dojocat"
-
-## Plugins
-
-The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
 
 ### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
 
@@ -173,8 +144,6 @@ see [how to change output](https://github.com/markdown-it/markdown-it-emoji#chan
 Footnote 1 link[^first].
 
 Footnote 2 link[^second].
-
-Inline footnote^[Text of inline footnote] definition.
 
 Duplicated footnote reference[^second].
 
@@ -199,22 +168,14 @@ Term 2 with _inline markup_
 
     Third paragraph of definition 2.
 
-_Compact style:_
-
-Term 1
-~ Definition 1
-
-Term 2
-~ Definition 2a
-~ Definition 2b
 
 ### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
 
-This is HTML abbreviation example.
+\*[HTML]: Hyper Text Markup Language
 
+This is HTML abbreviation example.
 It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 
-\*[HTML]: Hyper Text Markup Language
 
 ### [Custom containers](https://github.com/markdown-it/markdown-it-container)
 

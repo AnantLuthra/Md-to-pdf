@@ -1,12 +1,3 @@
-<hr />
-<p><strong>Advertisement :)</strong></p>
-<ul>
-<li><strong><a href="https://nodeca.github.io/pica/demo/">pica</a></strong> - high quality and fast image
-resize in browser.</li>
-<li><strong><a href="https://github.com/nodeca/babelfish/">babelfish</a></strong> - developer friendly
-i18n with plurals support and easy syntax.</li>
-</ul>
-<h2>You will like those projects!</h2>
 <h1>h1 Heading 8-)</h1>
 <h2>h2 Heading</h2>
 <h3>h3 Heading</h3>
@@ -17,12 +8,6 @@ i18n with plurals support and easy syntax.</li>
 <hr />
 <hr />
 <hr />
-<h2>Typographic replacements</h2>
-<p>Enable typographer option to see result.</p>
-<p>(c) (C) (r) (R) (tm) (TM) (p) (P) +-</p>
-<p>test.. test... test..... test?..... test!....</p>
-<p>!!!!!! ???? ,, -- ---</p>
-<p>"Smartypants, double quotes" and 'single quotes'</p>
 <h2>Emphasis</h2>
 <p><strong>This is bold text</strong></p>
 <p><strong>This is bold text</strong></p>
@@ -74,11 +59,12 @@ i18n with plurals support and easy syntax.</li>
 <h2>Code</h2>
 <p>Inline <code>code</code></p>
 <p>Indented code</p>
-<pre><code>// Some comments
+<div class="codehilite"><pre><span></span><code>// Some comments
 line 1 of code
 line 2 of code
 line 3 of code
-</code></pre>
+</code></pre></div>
+
 <p>Block code "fences"</p>
 <p><code>Sample text here...</code></p>
 <p>Syntax highlighting</p>
@@ -137,16 +123,12 @@ var foo = function (bar) {
 <h2>Links</h2>
 <p><a href="http://dev.nodeca.com">link text</a></p>
 <p><a href="http://nodeca.github.io/pica/demo/" title="title text!">link with title</a></p>
-<p>Autoconverted link https://github.com/nodeca/pica (enable linkify to see)</p>
 <h2>Images</h2>
 <p><img alt="Minion" src="https://octodex.github.com/images/minion.png" />
 <img alt="Stormtroopocat" src="https://octodex.github.com/images/stormtroopocat.jpg" title="The Stormtroopocat" /></p>
 <p>Like links, Images also have a footnote style syntax</p>
 <p><img alt="Alt text" src="https://octodex.github.com/images/dojocat.jpg" title="The Dojocat" /></p>
 <p>With a reference later in the document defining the URL location:</p>
-<h2>Plugins</h2>
-<p>The killer feature of <code>markdown-it</code> is very effective support of
-<a href="https://www.npmjs.org/browse/keyword/markdown-it-plugin">syntax plugins</a>.</p>
 <h3><a href="https://github.com/markdown-it/markdown-it-emoji">Emojies</a></h3>
 <blockquote>
 <p>Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:</p>
@@ -158,39 +140,35 @@ var foo = function (bar) {
 <li>19^th^</li>
 <li>H~2~O</li>
 </ul>
-<h3><a href="https://github.com/markdown-it/markdown-it-ins">\<ins></a></h3>
-<p>++Inserted text++</p>
-<h3><a href="https://github.com/markdown-it/markdown-it-mark">\<mark></a></h3>
-<p>==Marked text==</p>
 <h3><a href="https://github.com/markdown-it/markdown-it-footnote">Footnotes</a></h3>
 <p>Footnote 1 link[^first].</p>
 <p>Footnote 2 link[^second].</p>
-<p>Inline footnote^[Text of inline footnote] definition.</p>
 <p>Duplicated footnote reference[^second].</p>
 <p>[^first]: Footnote <strong>can have markup</strong></p>
-<pre><code>and multiple paragraphs.
-</code></pre>
+<div class="codehilite"><pre><span></span><code>and multiple paragraphs.
+</code></pre></div>
+
 <p>[^second]: Footnote text.</p>
 <h3><a href="https://github.com/markdown-it/markdown-it-deflist">Definition lists</a></h3>
-<p>Term 1</p>
-<p>: Definition 1
+<dl>
+<dt>Term 1</dt>
+<dd>
+<p>Definition 1
 with lazy continuation.</p>
-<p>Term 2 with <em>inline markup</em></p>
-<p>: Definition 2</p>
-<pre><code>    { some code, part of Definition 2 }
+</dd>
+<dt>Term 2 with <em>inline markup</em></dt>
+<dd>
+<p>Definition 2</p>
+<div class="codehilite"><pre><span></span><code>{ some code, part of Definition 2 }
+</code></pre></div>
 
-Third paragraph of definition 2.
-</code></pre>
-<p><em>Compact style:</em></p>
-<p>Term 1
-~ Definition 1</p>
-<p>Term 2
-~ Definition 2a
-~ Definition 2b</p>
+<p>Third paragraph of definition 2.</p>
+</dd>
+</dl>
 <h3><a href="https://github.com/markdown-it/markdown-it-abbr">Abbreviations</a></h3>
-<p>This is HTML abbreviation example.</p>
-<p>It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.</p>
 <p>*[HTML]: Hyper Text Markup Language</p>
+<p>This is HTML abbreviation example.
+It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.</p>
 <h3><a href="https://github.com/markdown-it/markdown-it-container">Custom containers</a></h3>
 <p>::: warning
 <em>here be dragons</em>
