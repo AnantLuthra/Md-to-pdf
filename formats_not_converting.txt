@@ -2,16 +2,19 @@
 [
     57. foo
     1. bar
+    2. x
 
     should be converted to:
 
     57. foo
     58. bar
+    59. x
 
     But, getting converted to:
 
     1. foo
     2. bar
+    3. x
 ]
 
 2. Emojies are not being converted.[Some are being converted, but not all !!](self)

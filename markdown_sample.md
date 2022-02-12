@@ -91,6 +91,12 @@ var foo = function (bar) {
 console.log(foo(5));
 ```
 
+```python
+x = 10
+y = "Hello"
+print(x, y)
+```
+
 ## Tables
 
 | Option | Description                                                               |
@@ -186,3 +192,9 @@ The dissolved oxygen may take up electrons directly to from $\ce{OH-}$ ions as f
 $$\ce{O2 + 4H2O + 4e- -> 4OH-}$$
 The over all reaction of the miniature cell will be :
 $$\ce{2Fe(s) + O2(g) + 4H+(aq) -> Fe^2+(aq) + 2H2O(l)}$$
+
+56. bye
+58. foo
+
+3. bar
+4. x

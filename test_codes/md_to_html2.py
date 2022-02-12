@@ -6,6 +6,7 @@ EXTENSIONS = [
     "tables",
     "attr_list",
     "def_list",
+    "fenced_code",
     "codehilite",
 ]
 
@@ -46,16 +47,19 @@ THEMES = [
 ]
 
 
-def covnert_md_to_html(filename, theme="default"):
+def covnert_md_to_html(filename, theme="monokai"):
     global EXTENSIONS
+    print("Reading markdown")
     with open(filename) as mdfile:
         html = markdown.markdown(
             mdfile.read(),
             extensions=EXTENSIONS
         )
 
+    print("Linking css")
     # linking css file of theme with html
-    link_css_to_html(html, theme=theme)
+    html = link_css_to_html(html, theme=theme)
+    print("Writing to html file")
 
     """SHOULD UPDATE CSS TOO"""
 
@@ -63,7 +67,7 @@ def covnert_md_to_html(filename, theme="default"):
         htmlfile.write(html)
 
 def link_css_to_html(html, *, theme):
-    """Link css file in HTML to """
+    """Link css file in HTML"""
     css_link = f'<link rel="stylesheet" href="./css_files/{theme}.css">\n'
     return css_link + html
 
@@ -71,7 +75,7 @@ def link_css_to_html(html, *, theme):
 def generate_css(theme):
     """Generate CSS file for code highlighting of provided theme"""
     print(f"Generating theme: {theme}")
-    cmd = f"pygmentize -S {theme} -f html > ./css_files/{theme}.css"
+    cmd = f"pygmentize -S {theme} -f html -a .codehilite > ./css_files/{theme}.css"
     os.system(cmd)
     print("Theme Generated\n")
 
