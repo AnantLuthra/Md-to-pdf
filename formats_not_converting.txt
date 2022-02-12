@@ -1,36 +1,17 @@
-1. Start numbering with offset:
-[
-    57. foo
-    1. bar
-    2. x
-
-    should be converted to:
-
-    57. foo
-    58. bar
-    59. x
-
-    But, getting converted to:
-
-    1. foo
-    2. bar
-    3. x
-]
-
-2. Emojies are not being converted.[Some are being converted, but not all !!](self)
+1. Emojies are not being converted.[Some are being converted, but not all !!](self)
 [
     Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
     Shortcuts (emoticons): :-) :-( 8-) ;)
 ]
 
-3. Footnote link is not rendering. (like wikipedia, [1], [2] with supscript and anchor tag) ("footnotes" extension not working)
+2. Footnote link is not rendering. (like wikipedia, [1], [2] with supscript and anchor tag) ("footnotes" extension not working)
 [
     Footnote 1 link[^first].
     Footnote 2 link[^second].
 
 ]
 
-4. Equations.
+3. Equations.
 [
     (Chemistry)
     $\ce{OH-}$ ions as follows :
@@ -44,12 +25,4 @@
     $$
 ]
 
-5. Abbreviations ("abbr" extn not working)
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
-
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-*[HTML]: Hyper Text Markup Language
-
+4. Size of images in HTML

@@ -1,4 +1,4 @@
-pre { line-height: 125%; }
+pre { line-height: 125%; padding: 10px; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
 span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
 td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
@@ -82,3 +82,4 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .codehilite .vi { color: #E06C75 } /* Name.Variable.Instance */
 .codehilite .vm { color: #E06C75 } /* Name.Variable.Magic */
 .codehilite .il { color: #D19A66 } /* Literal.Number.Integer.Long */
+blockquote { border-left: 5px solid grey; padding-left: 10px;}

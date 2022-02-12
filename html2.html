@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="./css_files/monokai.css">
+<link rel="stylesheet" href="./css_files/one-dark.css">
+<link rel="stylesheet" href="./css_files/dark_bg.css">
 <h1>h1 Heading 8-)</h1>
 <h2>h2 Heading</h2>
 <h3>h3 Heading</h3>
@@ -53,7 +54,7 @@
 <li>...or keep all the numbers as <code>1.</code></li>
 </ol>
 <p>Start numbering with offset:</p>
-<ol>
+<ol start="57">
 <li>foo</li>
 <li>bar</li>
 </ol>
@@ -150,14 +151,9 @@ line 3 of code
 <li>H~2~O</li>
 </ul>
 <h3><a href="https://github.com/markdown-it/markdown-it-footnote">Footnotes</a></h3>
-<p>Footnote 1 link[^first].</p>
-<p>Footnote 2 link[^second].</p>
-<p>Duplicated footnote reference[^second].</p>
-<p>[^first]: Footnote <strong>can have markup</strong></p>
-<div class="codehilite"><pre><span></span><code>and multiple paragraphs.
-</code></pre></div>
-
-<p>[^second]: Footnote text.</p>
+<p>Footnote 1 link<sup id="fnref:first"><a class="footnote-ref" href="#fn:first">1</a></sup>.</p>
+<p>Footnote 2 link<sup id="fnref:second"><a class="footnote-ref" href="#fn:second">2</a></sup>.</p>
+<p>Duplicated footnote reference<sup id="fnref2:second"><a class="footnote-ref" href="#fn:second">2</a></sup>.</p>
 <h3><a href="https://github.com/markdown-it/markdown-it-deflist">Definition lists</a></h3>
 <dl>
 <dt>Term 1</dt>
@@ -186,7 +182,7 @@ The dissolved oxygen may take up electrons directly to from $\ce{OH-}$ ions as f
 $$\ce{O2 + 4H2O + 4e- -&gt; 4OH-}$$
 The over all reaction of the miniature cell will be :
 $$\ce{2Fe(s) + O2(g) + 4H+(aq) -&gt; Fe^2+(aq) + 2H2O(l)}$$</p>
-<ol>
+<ol start="56">
 <li>bye</li>
 <li>
 <p>foo</p>
@@ -196,3 +192,18 @@ $$\ce{2Fe(s) + O2(g) + 4H+(aq) -&gt; Fe^2+(aq) + 2H2O(l)}$$</p>
 </li>
 <li>x</li>
 </ol>
+<blockquote>
+<p><strong><em>56. Hello</em></strong></p>
+</blockquote>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:first">
+<p>Footnote <strong>can have markup</strong></p>
+<p>and multiple paragraphs.&#160;<a class="footnote-backref" href="#fnref:first" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:second">
+<p>Footnote text.&#160;<a class="footnote-backref" href="#fnref:second" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:second" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>

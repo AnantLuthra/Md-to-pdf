@@ -8,6 +8,7 @@ EXTENSIONS = [
     "def_list",
     "fenced_code",
     "codehilite",
+    "sane_lists",
 ]
 
 THEMES = [
@@ -46,8 +47,9 @@ THEMES = [
     "lilypond"
 ]
 
+DARK_MODE = True
 
-def covnert_md_to_html(filename, theme="monokai"):
+def covnert_md_to_html(filename, theme="one-dark"):
     global EXTENSIONS
     print("Reading markdown")
     with open(filename) as mdfile:
@@ -58,7 +60,7 @@ def covnert_md_to_html(filename, theme="monokai"):
 
     print("Linking css")
     # linking css file of theme with html
-    html = link_css_to_html(html, theme=theme)
+    html = link_css(html, theme=theme)
     print("Writing to html file")
 
     """SHOULD UPDATE CSS TOO"""
@@ -66,19 +68,28 @@ def covnert_md_to_html(filename, theme="monokai"):
     with open("./html2.html", "w") as htmlfile:
         htmlfile.write(html)
 
-def link_css_to_html(html, *, theme):
+
+def link_css(html, *, theme):
     """Link css file in HTML"""
+    global DARK_MODE
+
     css_link = f'<link rel="stylesheet" href="./css_files/{theme}.css">\n'
-    return css_link + html
+
+    if DARK_MODE:
+        dark_css_link = f'<link rel="stylesheet" href="./css_files/dark_bg.css">\n'
+        html = css_link + dark_css_link + html
+    else:
+        html = css_link + html
+    return html
 
 
 def generate_css(theme):
     """Generate CSS file for code highlighting of provided theme"""
+
     print(f"Generating theme: {theme}")
     cmd = f"pygmentize -S {theme} -f html -a .codehilite > ./css_files/{theme}.css"
     os.system(cmd)
     print("Theme Generated\n")
-
 
 
 if __name__ == "__main__":
