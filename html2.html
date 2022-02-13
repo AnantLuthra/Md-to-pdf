@@ -151,9 +151,14 @@ line 3 of code
 <li>H~2~O</li>
 </ul>
 <h3><a href="https://github.com/markdown-it/markdown-it-footnote">Footnotes</a></h3>
-<p>Footnote 1 link<sup id="fnref:first"><a class="footnote-ref" href="#fn:first">1</a></sup>.</p>
-<p>Footnote 2 link<sup id="fnref:second"><a class="footnote-ref" href="#fn:second">2</a></sup>.</p>
-<p>Duplicated footnote reference<sup id="fnref2:second"><a class="footnote-ref" href="#fn:second">2</a></sup>.</p>
+<p>Footnote 1 link[^first].</p>
+<p>Footnote 2 link[^second].</p>
+<p>Duplicated footnote reference[^second].</p>
+<p>[^first]: Footnote <strong>can have markup</strong></p>
+<div class="codehilite"><pre><span></span><code>and multiple paragraphs.
+</code></pre></div>
+
+<p>[^second]: Footnote text.</p>
 <h3><a href="https://github.com/markdown-it/markdown-it-deflist">Definition lists</a></h3>
 <dl>
 <dt>Term 1</dt>
@@ -195,15 +200,3 @@ $$\ce{2Fe(s) + O2(g) + 4H+(aq) -&gt; Fe^2+(aq) + 2H2O(l)}$$</p>
 <blockquote>
 <p><strong><em>56. Hello</em></strong></p>
 </blockquote>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:first">
-<p>Footnote <strong>can have markup</strong></p>
-<p>and multiple paragraphs.&#160;<a class="footnote-backref" href="#fnref:first" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-<li id="fn:second">
-<p>Footnote text.&#160;<a class="footnote-backref" href="#fnref:second" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:second" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>

@@ -1,10 +1,11 @@
-pre { line-height: 125%; padding: 10px; }
+body { background-color: #FFF; color: #0d1117; font-family: "Segoe UI", sans-serif; }
+a { color: #58A6FF; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
 span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
 td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 .codehilite .hll { background-color: #ffffcc }
-.codehilite { background: #282C34; color: #ABB2BF }
+.codehilite { background: #282C34; color: #ABB2BF; width: max-content; padding: 5px 50px 5px 10px;  border-radius: 5px; margin: 10px 0; width: max-content; padding: 5px 50px 5px 10px;  border-radius: 5px; margin: 10px 0; }
 .codehilite .c { color: #7F848E } /* Comment */
 .codehilite .err { color: #ABB2BF } /* Error */
 .codehilite .esc { color: #ABB2BF } /* Escape */
@@ -82,4 +83,12 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .codehilite .vi { color: #E06C75 } /* Name.Variable.Instance */
 .codehilite .vm { color: #E06C75 } /* Name.Variable.Magic */
 .codehilite .il { color: #D19A66 } /* Literal.Number.Integer.Long */
-blockquote { border-left: 5px solid grey; padding-left: 10px;}
+blockquote { border-left: 5px solid grey; padding-left: 10px; }
+* { font-size: 16px; }
+h1 { font-size: 28px; }
+h2 { font-size: 26px; }
+h3 { font-size: 24px; }
+h4 { font-size: 22px; }
+h5 { font-size: 20px; }
+h6 { font-size: 18px; }
+pre {font-size: 14px; }
