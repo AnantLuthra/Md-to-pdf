@@ -5,10 +5,6 @@ class EmojiConverter:
     def __init__(self, data:str) -> None:
         self.data = data
 
-        # # Running main function, for main implementation.
-        # self.main_function(data)
-        
-
     def search_emoji(self, data:str) -> list:
 
         """This Function searches where the emojies are present in the given string
@@ -34,7 +30,7 @@ class EmojiConverter:
         return __line_having_colon, __lines
 
     def give_emoji(self, emojii: str):
-        """This function returns emoji at the place of emoji unicode or this :thumbsup:"""
+        """This function returns emoji at the place of this :sweat_smile:"""
 
         try:
             emojii = emoji.emojize(emojii, use_aliases=True)
