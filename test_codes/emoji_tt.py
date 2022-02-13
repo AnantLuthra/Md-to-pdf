@@ -1,11 +1,19 @@
+"""
+Have to figure out what method to use for getting emoji from the emoticons
+1. Directly pass out the 
+"""
+
+
 import emoji
+import emot
+
 
 class EmojiConverter:
     
     def __init__(self, data:str) -> None:
         self.data = data
 
-    def search_emoji(self, data:str) -> list:
+    def _search_emoji(self, data:str) -> list:
 
         """This Function searches where the emojies are present in the given string
         through spliting the string with splitlines and searching for ':' in lines 
@@ -28,7 +36,16 @@ class EmojiConverter:
                         __colon += 1
                     
         return __line_having_colon, __lines
+      
+    def _emoticons_converter(self):
+        """This function make emoji in the place of emoticons."""
 
+        emot_obj = emot.core.emot() 
+        bulk_test = ["I love python ☮ 🙂 ❤ :-) :-( :-)))", "I love python\
+        🙂 ❤ :-) :-( :-)))", "I love python ☮ ❤ :-) :-( :-)))", "I love python ☮ 🙂 :-( :-)))"]
+        # emot_obj.bulk_emoji(bulk_test) 
+        return emot_obj.bulk_emoticons(bulk_test)
+    
     def give_emoji(self, emojii: str):
         """This function returns emoji at the place of this :sweat_smile:"""
 
@@ -39,10 +56,10 @@ class EmojiConverter:
 
         return emojii
 
-    def main_emoji_function(self, data):
+    def main_emoji_function(self):
         """This function contains main implementation of emoji segment"""
 
-        __content = self.search_emoji(data)
+        __content = self._search_emoji(self.data)
 
         # Sending those lines of list which contains ':' to convert them into emoji
         for i in __content[0]:
@@ -56,12 +73,12 @@ if __name__ == "__main__":
 > \n\
 > Shortcuts (emoticons): :-) :-( 8-) ;)\n\
 nacho :clap: thanks\n\
-Thank to all who working in this project :100: "
+Thank to all who working in this project :100: :)"
 
-"""
+
     # How to use this class.
     a = EmojiConverter(data)                    # Just make an instance of class
-    print(a.main_emoji_function(a.data))        # And run main_emoji_function and passing the data as argument.
+    print(a.main_emoji_function())        # And run main_emoji_function and passing the data as argument.
                                                 # To get the required output.
-
-"""
+    
+    print(a._emoticons_converter())
